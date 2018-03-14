@@ -73,7 +73,7 @@ function add_rating_popup(data) {
         info_window.close();
     }
     info_window = new google.maps.InfoWindow({
-        content: '<h3>Average Rating: '+get_avg(data.feature.getProperty("ratings")).toFixed(1)+'</h3><h3>Add new rating</h3><select id="new_rating"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>' +
+        content: '<h3>Average Rating: '+get_avg(data.feature.getProperty("ratings")).toFixed(1)+'</h3><h3>Add new rating</h3><select id="new_rating"><option value="1">nope(1)</option><option value="2">meh(2)</option><option value="3">maybe(3)</option><option value="4">ok(4)</option><option value="5">axne(5)</option></select>' +
         '\t&nbsp;\t&nbsp;<button onclick="add_rating()">Add Rating</button><br><br><br><a onclick="remove_active_feature()" href="#">Remove this</a>',
         position: data.latLng
     });
